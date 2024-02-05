@@ -1,19 +1,24 @@
 <?php 
 
-  $result = "2";
-  $result = $result + 1;
+$a = 2;
+$b = 4;
+$c = 7;
 
-  $num = 11;
+$result_sum = $a + $b * $c;
+$result_div = 7 / 2;
 
-  $num = (double) $num;
+$sald = 13125412512513235323.32;
 
-  var_dump($result); // Imprime o tipo e o valor da variável
-  var_dump($num);
+$money = number_format($sald, 2, ",", ".");
 
-  echo $result . $num . "<br>";
 
-  $result2 = '3.5';
+// * Multiplicação
+// + Adição
+// - Subtração
+// / Divisão
+// % Resto divisão
 
-  echo (double) $result2 ;
+echo "$result_sum <br>";
+echo "$result_div <br>";
+echo (float) $abc;
 
-  # O PHP faz a verificação de tipo portanto se somar "2" + 1 vai resultar 3 
