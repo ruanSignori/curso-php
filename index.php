@@ -1,24 +1,22 @@
-<?php 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <?php
+  $test = 0 == false;
+  // AND = E
+  // OR = Ou
+  // XOR = Somente uma pode ser verdadeira
 
-$a = 2;
-$b = 4;
-$c = 7;
+  // && = e
+  // || = ou
+  // ! = Negação
+  echo var_dump( $test );
+  ?>
 
-$result_sum = $a + $b * $c;
-$result_div = 7 / 2;
-
-$sald = 13125412512513235323.32;
-
-$money = number_format($sald, 2, ",", ".");
-
-
-// * Multiplicação
-// + Adição
-// - Subtração
-// / Divisão
-// % Resto divisão
-
-echo "$result_sum <br>";
-echo "$result_div <br>";
-echo (float) $abc;
-
+</body>
+</html>
