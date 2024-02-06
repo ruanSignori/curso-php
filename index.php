@@ -7,15 +7,19 @@
 </head>
 <body>
   <?php
-  $a = 3;
+  $a = 5;
 
-  if ($a == 2) {
-    echo var_dump($a) . '1º condição';
-  } elseif ($a == 3) {
-    echo var_dump($a) . '2º condição';
-  } else {
-    echo var_dump($a) . 'Nenhuma condição';
-  };
+  switch ($a) {
+    case 3:
+      echo "Valor 3";
+      break;
+    case 2;
+      echo "Valor 2";
+      break;
+    default:
+      echo 'Nenhum dos valores';
+      break;
+  }
   ?>
 
 </body>
