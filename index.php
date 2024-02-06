@@ -7,12 +7,12 @@
 </head>
 <body>
   <?php
-  $a = 5;
+  
+  // Executa antes de verificar
 
-  while(0) // Não vai ser executado pois o PHP considera 0 como um "false";
-  while ($a--) {
-    echo "1";
-  };
+  do {
+    echo "Opa";
+  } while (0)
   ?>
 
 </body>
