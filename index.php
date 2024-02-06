@@ -9,17 +9,10 @@
   <?php
   $a = 5;
 
-  switch ($a) {
-    case 3:
-      echo "Valor 3";
-      break;
-    case 2;
-      echo "Valor 2";
-      break;
-    default:
-      echo 'Nenhum dos valores';
-      break;
-  }
+  while(0) // Não vai ser executado pois o PHP considera 0 como um "false";
+  while ($a--) {
+    echo "1";
+  };
   ?>
 
 </body>
