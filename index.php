@@ -7,15 +7,15 @@
 </head>
 <body>
   <?php
-  $test = 0 == false;
-  // AND = E
-  // OR = Ou
-  // XOR = Somente uma pode ser verdadeira
+  $a = 3;
 
-  // && = e
-  // || = ou
-  // ! = Negação
-  echo var_dump( $test );
+  if ($a == 2) {
+    echo var_dump($a) . '1º condição';
+  } elseif ($a == 3) {
+    echo var_dump($a) . '2º condição';
+  } else {
+    echo var_dump($a) . 'Nenhuma condição';
+  };
   ?>
 
 </body>
