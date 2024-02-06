@@ -7,9 +7,10 @@
 </head>
 <body>
   <?php
-    for ($i = 0; $i <= 100; $i++) {
-      echo "$i <br>";
-    }
+  $students = ["a", "b", "c"];
+    foreach ($students as $key ) {
+      echo "Aluno: $key <br>";
+    } 
   ?>
 
 </body>
