@@ -7,12 +7,9 @@
 </head>
 <body>
   <?php
-  
-  // Executa antes de verificar
-
-  do {
-    echo "Opa";
-  } while (0)
+    for ($i = 0; $i <= 100; $i++) {
+      echo "$i <br>";
+    }
   ?>
 
 </body>
