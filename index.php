@@ -1,6 +1,3 @@
-<?php 
-  session_start(); // Deve ser a primeira instrução da página
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,20 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-  <?php
-    // Cookie são salvos pelo o lado do cliente, e a sessão pelo o lado do servidor
-    // Depois que o usuário fechar o navegador, a sessão é encerrada 
-    //Cria sessão
-    $id = $_SESSION['id'] = 3;
-    $name = $_SESSION['name'] = 'Ruan';
 
-    if (isset($_SESSION['id'])) {
-      echo "ID usuário: $id <br> Nome: $name";
-    }
 
-    // Excluir a sessão
-    unset($_SESSION['id'], $_SESSION['name']);
-  ?>
+<h2>Cadastrar usuário</h2>
+
+<!-- O método GET, envia os dados do formulário através da URL-->
+<form action="process.php" method="GET">
+  <label for="">Nome</label>
+  <input type="text" name="nome_cliente" placeholder="Digite o nome" required><br><br>
+
+  <label for="">Email</label>
+  <input type="email" name="email_cliente" placeholder="Digite o nome" required><br><br>
+
+  <input type="submit" value="Cadastrar">
+
+</form>
+
 
 </body>
 </html>
