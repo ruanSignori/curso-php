@@ -1,3 +1,6 @@
+<?php 
+  session_start(); // Deve ser a primeira instrução da página
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,23 +10,18 @@
 </head>
 <body>
   <?php
-  echo "<h1>Cookies</h1>";
+    // Cookie são salvos pelo o lado do cliente, e a sessão pelo o lado do servidor
+    // Depois que o usuário fechar o navegador, a sessão é encerrada 
+    //Cria sessão
+    $id = $_SESSION['id'] = 3;
+    $name = $_SESSION['name'] = 'Ruan';
 
-  setcookie("visit", "true", (time() +  (7 * 24 * 3600)));
+    if (isset($_SESSION['id'])) {
+      echo "ID usuário: $id <br> Nome: $name";
+    }
 
-  // Se o cookie já existe, imprime na tela
-  // Quando você acessa pela 1º vez, não vai aparecer nada
-  if (isset($_COOKIE['visit'])) {
-    echo $_COOKIE['visit'];
-  }
-
-  setcookie('loged', 'true', time() + (7 * 24 * 3600));
-  if (isset($_COOKIE['loged'])) {
-    echo "Usuário logado";
-  } else {
-    echo "Cookie inválido";
-  }
-  
+    // Excluir a sessão
+    unset($_SESSION['id'], $_SESSION['name']);
   ?>
 
 </body>
