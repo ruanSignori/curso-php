@@ -7,19 +7,18 @@
 </head>
 <body>
   <?php
-  echo "Passagem por referência <br>";
+  function a($num) {
+    if ($num > 0) {
+      echo "valor $num <br>";
+      $num--;
+      a($num);
+    }
+   
 
-  function salario(&$num) {
-    // Quando a função ser invocada, vai alterar o valor da variável que é passada como parâmetro;
-    $num += 200;
-    echo "Function: $num <br>";
-  }
+  };  
 
-  $salariob = 2300;
 
-  salario($salariob);
-
-  echo "$salariob";
+  a(10);
 
   ?>
 
