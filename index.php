@@ -10,8 +10,8 @@
 
 <h2>Cadastrar usuário</h2>
 
-<!-- O método GET, envia os dados do formulário através da URL-->
-<form action="process.php" method="GET">
+<!-- O método POST, envia os dados do formulário através do corpo da mensagem encaminhada ao servidor-->
+<form action="process.php" method="POST">
   <label for="">Nome</label>
   <input type="text" name="nome_cliente" placeholder="Digite o nome" required><br><br>
 
